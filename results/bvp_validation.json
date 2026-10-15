@@ -1,0 +1,20 @@
+[
+  {
+    "q": 1,
+    "alpha": 0,
+    "bvp_success": true,
+    "max_angle_difference": 3.152619429958037e-07
+  },
+  {
+    "q": 3,
+    "alpha": -0.4,
+    "bvp_success": true,
+    "max_angle_difference": 5.72576483337528e-07
+  },
+  {
+    "q": -2,
+    "alpha": 0.6,
+    "bvp_success": true,
+    "max_angle_difference": 2.4133283684779627e-06
+  }
+]
