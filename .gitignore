@@ -2,3 +2,9 @@ __pycache__/
 *.pyc
 .venv/
 report/preview-*.png
+
+# LaTeX build artifacts and manuscript previews
+report/*.aux
+report/*.log
+report/*.out
+report/paper-preview-*.png

@@ -1,0 +1,18 @@
+\begin{table}[htbp]
+\centering\small
+\caption{Mean relative angle error $E_\theta$ and coordinate-wise centerline RMSE $E_r$, averaged across initialization seeds. Both columns are expressed in units of $10^{-3}$.}\label{tab:secondary}
+\begin{tabular}{llrr}\toprule
+Test regime & Method & $10^3 E_\theta$ & $10^3 E_r$\\\midrule
+Interpolation & Supervised & 2.549 & 0.184\\
+ & Energy only & 0.630 & 0.039\\
+ & Hybrid & 0.577 & 0.037\\
+\midrule
+Load extrapolation & Supervised & 12.516 & 2.673\\
+ & Energy only & 8.126 & 1.177\\
+ & Hybrid & 8.310 & 1.200\\
+\midrule
+Stiffness extrapolation & Supervised & 17.864 & 1.165\\
+ & Energy only & 7.065 & 0.373\\
+ & Hybrid & 6.543 & 0.357\\
+\bottomrule\end{tabular}
+\end{table}

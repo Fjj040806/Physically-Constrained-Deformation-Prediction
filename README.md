@@ -34,8 +34,8 @@ The models share hard kinematic constraints. These are comparisons of loss funct
 
 ## Report and demonstrations
 
-- [Academic research report (PDF)](report/research_report.pdf)
-- [Report source (Markdown)](report/research_report.md)
+- [Academic paper (PDF)](report/paper.pdf)
+- [Manuscript source (LaTeX)](report/paper.tex)
 - [Load-sweep animation](animations/load_sweep.gif): all three methods and reference, with an error panel.
 - [Stiffness-sweep animation](animations/stiffness_sweep.gif): hybrid and reference under a changing stiffness gradient.
 - [Representative shapes](figures/shapes.png)
@@ -45,7 +45,7 @@ The models share hard kinematic constraints. These are comparisons of loss funct
 
 ## Reproduce
 
-Python 3.11 or newer is recommended. No GPU, external dataset, PyTorch, or commercial mechanics software is required. NumPy implements the network and explicit reverse-mode derivatives; SciPy performs optimization and independent BVP validation. Matplotlib and Pillow render the scientific animations.
+Python 3.11 or newer is recommended. No GPU, external dataset, PyTorch, or commercial mechanics software is required. NumPy implements the network and explicit reverse-mode derivatives; SciPy performs optimization and independent BVP validation. Matplotlib and Pillow render the scientific animations. Compiling the academic paper additionally requires a TeX installation with `pdflatex` (e.g., TeX Live). The supplied PDF can be read without TeX.
 
 ```bash
 python -m venv .venv
@@ -77,7 +77,7 @@ Five automated tests cover the mechanical energy gradient, selected neural-netwo
 | `validate_reference.py` | Independent continuous BVP checks |
 | `predict.py` | Saved-model inference to CSV |
 | `make_visuals.py` | Figures and two scientific GIF animations |
-| `report/` | PDF, Markdown, and report generation script |
+| `report/` | Academic manuscript PDF, LaTeX source, data-generated tables, and build script |
 | `models/` | Nine saved NumPy weight files |
 | `results/` | Data, metrics, optimizer histories, validation, environment metadata |
 | `tests/` | Numerical verification tests |
@@ -93,4 +93,4 @@ Next steps are label-count and loss-weight studies, independent dataset repetiti
 1. E, W. and Yu, B. *The Deep Ritz method: A deep learning-based numerical algorithm for solving variational problems.* [arXiv:1710.00211](https://arxiv.org/abs/1710.00211), 2017.
 2. Nguyen-Thanh, V. M., Zhuang, X., and Rabczuk, T. *A deep energy method for finite deformation hyperelasticity.* European Journal of Mechanics – A/Solids 80, 103874, 2020. [DOI](https://doi.org/10.1016/j.euromechsol.2019.103874).
 
-**Author:** Jiajun Fu, Duke Kunshan University. Developed with AI assistance for code, analysis, and writing. The report is an unreviewed computational project report. Existing repository license is retained in [LICENSE](LICENSE).
+**Author:** Jiajun Fu, Duke Kunshan University. Developed with AI assistance for code, analysis, and writing. The paper presents a computational study of an idealized flexible finger. Existing repository license is retained in [LICENSE](LICENSE).
